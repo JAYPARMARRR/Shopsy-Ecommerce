@@ -3,9 +3,9 @@ import BoxImg from "../Componentes/img/2.jpg"
 import "./Shop.css"
 
 const Shop = () => {
+  // https://dummyjson.com/products
 
 
-  
   return (
     <div>
       <div className='mine-box'>
