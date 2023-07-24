@@ -8,14 +8,15 @@ import "./Shop.css"
 const Shop = () => {
 
   useEffect(() => {
-    fetchData(); // Call the API when the component mounts
+    fetchData(); 
   }, []);
 
   const fetchData = async () => {
     try {
-      const jayu = await axios.get('https://dummyjson.com/products');
-      console.log('API Response:>>>>>>>>>>>', jayu.data); // Print the API response in the console
-    } catch (error) {
+      const rep = await axios.get('https://dummyjson.com/products');
+      console.log('API Response:>>>>>>>>>>>', rep.data); 
+    } 
+    catch (error) {
       console.error('Error fetching data:', error);
     }
   };
