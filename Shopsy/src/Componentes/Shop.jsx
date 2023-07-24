@@ -1,15 +1,38 @@
-import React from 'react'
+import React, { useEffect } from 'react';
+import axios from 'axios';
+
 import BoxImg from "../Componentes/img/2.jpg"
 import "./Shop.css"
 
+
 const Shop = () => {
-  // https://dummyjson.com/products
+
+  useEffect(() => {
+    fetchData(); // Call the API when the component mounts
+  }, []);
+
+  const fetchData = async () => {
+    try {
+      const jayu = await axios.get('https://dummyjson.com/products');
+      console.log('API Response:>>>>>>>>>>>', jayu.data); // Print the API response in the console
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
+  };
+
+
+
+
+
+
+
+
 
 
   return (
     <div>
       <div className='mine-box'>
-        <div>
+        <div> 
           <img src={BoxImg} alt="My Image"  className='img' />
         </div>
 

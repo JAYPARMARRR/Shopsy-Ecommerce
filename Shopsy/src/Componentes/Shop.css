@@ -9,7 +9,7 @@
     margin-left: 11px;
 }
 
-.card-heding{
+.card-heding{ 
     display: flex;
     justify-content: space-around;
 }
@@ -20,7 +20,7 @@
   text-decoration: none;
   border: 2px solid purple;
   padding: 10px 20px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   background: transparent;
   position: relative;
