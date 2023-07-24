@@ -1,0 +1,96 @@
+.mine-box {
+    border: 2px solid black;
+    width: 20%;
+    margin: 43px 40px;
+}
+
+.img {
+    height: 250px;
+    margin-left: 11px;
+}
+
+.card-heding{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn2{
+    color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid purple;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+.btn2:hover {
+    color: white;
+  }
+
+
+  .btn2::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn2:hover::before {
+    width: 160%;
+  }
+
+
+  /* //////////////////////////////////////// */
+.btn1{
+    color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid purple;
+  padding: 10px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+  margin-right: 4px;
+}
+.btn1:hover {
+    color: white;
+  }
+
+
+  .btn1::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: purple;
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn1:hover::before {
+    width: 160%;
+  }
+
+
+.tow-button-main{
+
+        display: flex;
+        margin: 11px 13px;
+     
+    }
