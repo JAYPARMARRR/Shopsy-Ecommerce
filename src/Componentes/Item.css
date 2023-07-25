@@ -1,0 +1,44 @@
+.main-item-box {
+  border: 2px solid black;
+  height: 501px;
+  width: 88%;
+  margin: 93px 71px;;
+  display: flex;
+}
+
+.left-side-main-box {
+  border: 1px solid black;
+  height: 497px;
+  width: 49%;
+  border-color: blue;
+}
+
+.right-side-main-box {
+  border: 1px solid black;
+  height: 497px;
+  width: 51%;
+  border-color: red;
+}
+
+.img {
+  height: 458px;
+  width: 441px;
+  border: 1px solid red;
+}
+
+.img2 {
+  height: 65%;
+  width: 66%;
+  margin-left: 23px;
+}
+
+.mine-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.heding-right-side-box{
+    color: purple;
+}
