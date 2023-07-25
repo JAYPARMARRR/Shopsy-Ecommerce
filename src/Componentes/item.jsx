@@ -32,25 +32,27 @@ const Item = () => {
             </div>
 
             <div>
-              <img src={jayu} alt="Not" className="img" />
+              <img src={jayu} alt="Not" id="img" />
             </div>
           </div>
         </div>
-{/* ///////////////////////////////////////////////////////////////////////////////// */}
+        {/* ///////////////////////////////////////////////////////////////////////////////// */}
         <div className="right-side-main-box">
           <div>
-          <h1 className="heding-right-side-box">iphone x </h1>
-          <p> by Apple</p>
+            <h1 id="heding-right-side-box">iphone x </h1>
+            <p id="brand-right-side-box"> by Apple</p>
 
           </div>
 
           <div>
-            
-            <h1>$717.25</h1>
-            <p>An apple mobile which is nothing like apple</p>
+
+            <h1 id="price-right-side-box">$717.25</h1>
+            <p id="description">An apple mobile which is nothing like apple</p>
           </div>
-       <button>Add To Cart</button>
-   
+          <button id="Cart">
+            <p>Add To Cart!</p>
+          </button>
+
 
         </div>
       </div>
