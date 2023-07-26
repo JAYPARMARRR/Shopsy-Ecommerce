@@ -17,14 +17,14 @@ const Shop = () => {
   const data = async () => {
     try {
       const rep = await axios.get("https://dummyjson.com/products");
-      console.log(">>>>>>>>>>>", rep.data);
+      // console.log(">>>>>>>>>>>", rep.data);
       setProducts(rep?.data?.products);
     } catch (error) {
       console.error("Error>>>>>>>>>>>>>>>>", error);
     }
   };
 
-  console.log("products", products);
+  // console.log("products", products);
 
   return (
     <div className="mine-div">
