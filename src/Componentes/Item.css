@@ -1,28 +1,24 @@
 .main-item-box {
-    border: 1px solid black;
+    border: 1px solid purple;
     height: 413px;
     width: 78%;
     margin: 93px 140px;
     display: flex;
 }
 .left-side-main-box {
-    border: 1px solid black;
+    border: 1px solid purple;
     height: 411px;
     width: 49%;
-    /* border-color: blue; */
 }
 
 .right-side-main-box {
-    /* border: 1px solid black; */
     height: 408px;
     width: 51%;
-    /* border-color: red; */
 }
 
 #img {
     height: 380px;
     width: 407px;
-    /* border: 1px solid red; */
 }
 
 .img2 {
@@ -50,6 +46,7 @@
 
 #brand-right-side-box{
     margin-top: -31px;
+    color: purple;
     margin-left: 47px;
     font-size: 22px;
 }
