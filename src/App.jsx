@@ -10,7 +10,8 @@ import Cart from './Componentes/Cart';
 
 const App = () => {
   const[ cartItem , setcartItem] = useState([])
-
+  
+  console.log(cartItem,">>>>>>");
   return (
     <div>
       <BrowserRouter>

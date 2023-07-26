@@ -36,7 +36,6 @@ const Shop = ({setcartItem}) => {
   };
 
   const AddCart =  (a)=>{
-    // console.log("Id>>>>>>", [a]);
     setcartItem((Itemss) => [...Itemss, a]);
   }
 
@@ -60,7 +59,7 @@ const Shop = ({setcartItem}) => {
             <div className="tow-button-main">
               <button onClick={() => navigate('/item', {state:item.id})} id="btn1"><p>Details</p></button>
               
-              <button id="btn2" onClick={ ()=>AddCart(item.id)}><p>Add to cart</p></button>
+              <button id="btn2" onClick={ ()=>AddCart(item)}><p>Add to cart</p></button>
             </div>
 
           </div>
