@@ -1,6 +1,5 @@
 .mine-box {
-  border: 1px solid purple;
-  border-radius: 15px;
+  border: 1px solid #8792eb;
   width: 20%;
   margin: 35px 50px;
 }
@@ -13,9 +12,9 @@
 }
 
 .img {
-  height: 250px;
+  height: 251px;
   width: 100%;
-  padding: 5px;
+  padding: 7px;
 }
 
 .img-main {
@@ -23,10 +22,10 @@
 }
 
 .title {
-  color: purple;
+  color: #8792eb;
 }
 .price {
-  color: purple;
+  color: #8792eb;
 }
 
 .card-heding {
@@ -34,77 +33,125 @@
   justify-content: space-around;
 }
 
-.btn2 {
-  color: purple;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid purple;
-  padding: 10px 20px;
-  font-size: 12px;
-  font-weight: bold;
-  background: transparent;
-  position: relative;
-  transition: all 0.5s;
-  overflow: hidden;
-}
-.btn2:hover {
-  color: white;
-}
 
-.btn2::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: purple;
-  z-index: -1;
-  transition: all 0.5s;
-}
 
-.btn2:hover::before {
-  width: 160%;
-}
-
-/* //////////////////////////////////////// */
-.btn1 {
-  color: purple;
-  text-transform: uppercase;
-  text-decoration: none;
-  border: 2px solid purple;
-  padding: 10px 20px;
-  font-size: 13px;
-  font-weight: bold;
-  background: transparent;
-  position: relative;
-  transition: all 0.5s;
-  overflow: hidden;
-  margin-right: 4px;
-}
-.btn1:hover {
-  color: white;
-}
-
-.btn1::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 0%;
-  top: 0;
-  left: -40px;
-  transform: skewX(45deg);
-  background-color: purple;
-  z-index: -1;
-  transition: all 0.5s;
-}
-
-.btn1:hover::before {
-  width: 160%;
-}
-
-.tow-button-main {
+#btn1 {
+  border: none;
+  width: 133px;
+  height: 44px;
+  color: #fff;
+  z-index: 1;
   display: flex;
-  margin: 17px 24px;
-}
+  background: #000;
+  position: relative;
+ }
+ 
+ #btn1 p {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+ #btn1::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 10%;
+  bottom: 0;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+  transition: 0.2s ease;
+ }
+ 
+ #btn1::before {
+  position: absolute;
+  content: "";
+ /*   bottom: 80%; */
+  transform: rotate(180deg);
+  width: 100%;
+  height: 10%;
+  transition: 0.2s ease;
+ /*   bottom:; */
+  z-index: -1;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+ }
+ 
+ #btn1:hover::after {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+ }
+ 
+ #btn1:hover::before {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+ }
+ 
+ 
+/* //////////////////////////////////////// */
+#btn2 {
+  border: none;
+  width: 133px;
+  height: 44px;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  background: #000;
+  position: relative;
+ }
+ 
+ #btn2 p {
+  margin: 0 auto;
+  align-self: center;
+  font-size: 17px;
+  font-weight: bold;
+  text-align: center;
+ }
+ 
+ #btn2::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  z-index: -1;
+  height: 10%;
+  bottom: 0;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+  transition: 0.2s ease;
+ }
+ 
+ #btn2::before {
+  position: absolute;
+  content: "";
+ /*   bottom: 80%; */
+  transform: rotate(180deg);
+  width: 100%;
+  height: 10%;
+  transition: 0.2s ease;
+ /*   bottom:; */
+  z-index: -1;
+  clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  background: #8792eb;
+ }
+ 
+ #btn2:hover::after {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+ }
+ 
+ #btn2:hover::before {
+  clip-path: polygon(0 30%, 9% 34%, 7% 39%, 11% 43%, 13% 33%, 17% 30%, 24% 34%, 25% 35%, 30% 31%, 30% 38%, 39% 33%, 35% 43%, 43% 45%, 55% 46%, 65% 74%, 67% 66%, 81% 57%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
+  height: 80%;
+ }
+ 
+ .tow-button-main{
+  display: flex;
+  margin-left: 5px;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  gap: 6px;
+ }
+ 

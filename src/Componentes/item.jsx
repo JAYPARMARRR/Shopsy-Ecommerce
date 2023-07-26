@@ -32,6 +32,7 @@ const Item = () => {
         <div className="left-side-main-box">
           <div className="mine-img-box">
             <div className="side-4-img">
+              
               {Array.isArray(itemm?.images) ? (
                 itemm?.images?.map((url) => {
                   return <img src={url} alt="Not" className="img2" />;

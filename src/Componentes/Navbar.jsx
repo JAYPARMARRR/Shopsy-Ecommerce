@@ -1,31 +1,50 @@
-import React from 'react'
-import "./Navbar.css"
-import { Link } from 'react-router-dom';
+import React from "react";
+import "./Navbar.css";
+import { Link, useNavigate } from "react-router-dom";
 
-import { FaShoppingCart } from 'react-icons/fa'
-import { FaHeart } from "react-icons/fa";
+import { FaShoppingCart } from "react-icons/fa";
 
-const Navbar = () => {
-    return (
-        <div id='main'>
-            <nav>
-                <h1 className='Shopsy-logo'> Shopsy</h1>
+const Navbar = ({cartItem}) => {
+  const navigate = useNavigate();
 
+  // const jayu = ()=>{
+  //     console.log("> Hey i am cart");
+  // }
 
-                <ul>
-                    <li><Link to="/home">Home</Link></li>
-                    <li><Link to="/shop">Shop</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <div className='save-but'>
-                        <FaShoppingCart id='cart' />
-                        <FaHeart id='hart' />
-                    </div>
-                </ul>
-                <button id='btn'>Visit Repo</button>
-            </nav>
+  return (
+    <div id="main">
+      <nav>
+        <h1 className="Shopsy-logo">Jayu Parmar</h1>
 
-        </div>
-    )
-}
+        <ul>
+          <li>
+            <Link to="/home">Home</Link>
+          </li>
+          <li>
+            <Link to="/shop">Shop</Link>
+          </li>
+          <li>
+            <Link to="/about">About</Link>
+          </li>
+          <div className="save-but">
+            <div style={{ position: "relative" }}>
+              <FaShoppingCart
+                id="cart"
+                onClick={() => {
+                  navigate("/cart");
+                }}
+              />
+              <span className="cart">{cartItem.length}</span>  
+            </div>
+          </div>
+        </ul>
 
-export default Navbar
+        <button id="btn">
+          <p>Log in!</p>
+        </button>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar;
