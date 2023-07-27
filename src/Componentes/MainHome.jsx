@@ -48,6 +48,6 @@ const navigate = useNavigate()
       </div>
     </div>
   );
-};
+}; 
 
 export default MainHome;

@@ -16,11 +16,13 @@
     height: 285px;
     display: block;
     margin: 1px auto;
+    mix-blend-mode: color-burn;
 }
 #heding-2 {
     height: 62px;
     display: block;
     margin: 0px auto;
+    mix-blend-mode: color-burn;
 }
 #pericarp-home1 {
     color: black;
@@ -33,7 +35,7 @@
   
   #pericarp-home1 span {
     font-weight: bold;
-    color: #FF4500; /* Adjust the color to your liking */
+    color: #FF4500; 
   }
   
 
@@ -76,7 +78,7 @@
    }
    
    #main-b:before {
-    position: absolute;
+    position: absolute; 
     content: "";
    /*   bottom: 80%; */
     transform: rotate(180deg);
