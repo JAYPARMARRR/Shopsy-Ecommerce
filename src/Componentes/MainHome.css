@@ -16,8 +16,9 @@
     height: 285px;
     display: block;
     margin: 1px auto;
-    mix-blend-mode: color-burn;
+    background: none;
 }
+
 #heding-2 {
     height: 62px;
     display: block;
