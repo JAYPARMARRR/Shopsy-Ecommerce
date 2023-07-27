@@ -6,6 +6,7 @@ import About from './Componentes/About';
 import Home from './Componentes/Home';
 import Item from './Componentes/item';
 import Cart from './Componentes/Cart';
+import MainHome from './Componentes/MainHome';
 
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
       <BrowserRouter>
         <Navbar cartItem={cartItem} />
         <Routes>
+          
+          <Route path='/' element={<MainHome/>} />
           <Route path='/Home' element={<Home />} />
           <Route path='/Shop' element={<Shop setcartItem={setcartItem} />} />
           <Route path='/About' element={<About />} />

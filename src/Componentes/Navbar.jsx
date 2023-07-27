@@ -3,7 +3,7 @@ import "./Navbar.css";
 import { Link, useNavigate } from "react-router-dom";
 
 import { FaShoppingCart } from "react-icons/fa";
-
+import Logoimg from "./img/logo.png"
 const Navbar = ({cartItem}) => {
   const navigate = useNavigate();
 
@@ -14,7 +14,7 @@ const Navbar = ({cartItem}) => {
   return (
     <div id="main">
       <nav>
-        <h1 className="Shopsy-logo">Jayu Parmar</h1>
+        <h1 className="Shopsy-logo"><img src={Logoimg} onClick={()=>{ navigate("/");;}} className="logo_img"/></h1>
 
         <ul>
           <li>
@@ -40,7 +40,7 @@ const Navbar = ({cartItem}) => {
         </ul>
 
         <button id="btn">
-          <p>Log in!</p>
+          <p>Log In</p>
         </button>
       </nav>
     </div>
