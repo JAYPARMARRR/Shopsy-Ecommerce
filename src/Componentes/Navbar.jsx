@@ -26,9 +26,12 @@ const Navbar = ({cartItem}) => {
           <li>
             <Link to="/about">About</Link>
           </li>
+          <li>
+            <Link to="/cart">Cart </Link>
+          </li>
           <div className="save-but">
-            <div style={{ position: "relative" }}>
-              <FaShoppingCart
+            <div style={{ position: "relative" }} > 
+              <FaShoppingCart 
                 id="cart"
                 onClick={() => {
                   navigate("/cart");
@@ -39,7 +42,7 @@ const Navbar = ({cartItem}) => {
           </div>
         </ul>
 
-        <button id="btn">
+        <button id="btn" >
           <p>Log In</p>
         </button>
       </nav>
