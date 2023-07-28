@@ -6,7 +6,35 @@ import LinkdinImg from "./img/linkedin.png"
 import GitImg from "./img/git.png"
 import VercelImg from "./img/vercel.png"
 import MoonlImg from "./img/Astronauts walk  ( loading ).gif"
+
+
+
+
+
 const About = () => {
+
+  const IntaClick = () => {
+   
+    window.open('https://www.instagram.com/nick_owen777/', '_blank');
+   
+  };
+
+  const GitImgClick = () => {
+
+    window.open('https://github.com/JAYPARMARRR?tab=repositories', '_blank');
+
+  };
+  const LinkdinClick = () => {
+    window.open('https://www.linkedin.com/in/jaykumar-vinodbhai-852823260', '_blank');
+  };
+  const VercelClick = () => {
+
+    window.open('https://vercel.com/dashboard', '_blank');
+    
+  };
+
+
+
   return (
     <div>
       <div>
@@ -45,10 +73,10 @@ const About = () => {
             <div id="right-side-main">
               <h6 id="right-heding">Social Media </h6>
               <div id="icons-about">
-                <img src={IntaImg} alt="Not" className="icons-about-peg" />
-                <img src={LinkdinImg} alt="Not" className="icons-about-peg" />
-                <img src={GitImg} alt="Not" className="icons-about-peg" />
-                <img src={VercelImg} alt="Not" className="icons-about-peg" id="vercel-m" />
+                <img src={IntaImg} alt="Not" className="icons-about-peg"  onClick={IntaClick}  style={{ cursor: 'pointer' }}/>
+                <img src={LinkdinImg} alt="Not" className="icons-about-peg" onClick={LinkdinClick}  style={{ cursor: 'pointer' }} />
+                <img src={GitImg} alt="Not" className="icons-about-peg"  onClick={GitImgClick} style={{ cursor: 'pointer' }}/>
+                <img src={VercelImg} alt="Not" className="icons-about-peg" id="vercel-m" onClick={VercelClick}  style={{ cursor: 'pointer' }}/>
               </div>
               <p>Send me messeng in email</p>
 
