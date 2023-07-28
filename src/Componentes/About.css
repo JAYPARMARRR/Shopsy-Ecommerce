@@ -45,7 +45,7 @@
 }
 #peracef-about-span {
   font-weight: bold;
-  color: #ff4500;
+  color:  rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
@@ -57,7 +57,7 @@
 }
 #about-email-span {
   font-weight: bold;
-  color: #ff4500;
+  color:  rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
@@ -69,7 +69,7 @@
 }
 #about-phone-span {
   font-weight: bold;
-  color: #ff4500;
+  color:  rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
@@ -276,4 +276,50 @@
     position: absolute;
     top: 186%;
     right: -39%;
+}
+
+
+
+.circular-image-container {
+  position: relative;
+  width: 398px;
+  height: 403px;
+}
+
+.circular-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-image: url(/src/Componentes/img/IMG_20220901_173117_794.jpg);
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  bottom: 135%;
+  left: 119%;
+}
+
+.circular-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 80%;
+  border-radius: inherit;
+  border: 3px solid rgb(164 255 238);
+  animation: pulsate 2s ease-in-out infinite;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
 }

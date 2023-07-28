@@ -68,6 +68,10 @@ const About = () => {
             </div>
 
             {/* ///////////////////////////////////////////////////////////////////////////////////// */}
+            <div class="circular-image-container">
+  <div class="circular-image"></div>
+  <div class="pulsating-ring"></div>
+</div>
 
 
             <div id="right-side-main">
