@@ -41,8 +41,8 @@ const Navbar = ({cartItem}) => {
             </div>
           </div>
         </ul>
-
-        <button id="btn" >
+     
+        <button id="btn"   onClick={()=>{navigate("/login")}}>
           <p>Log In</p>
         </button>
       </nav>

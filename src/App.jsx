@@ -7,6 +7,7 @@ import Home from './Componentes/Home';
 import Item from './Componentes/item';
 import Cart from './Componentes/Cart';
 import MainHome from './Componentes/MainHome';
+import Login from './Componentes/login';
 
 
 const App = () => {
@@ -20,11 +21,12 @@ const App = () => {
         <Routes>
           
           <Route path='/' element={<MainHome/>} />
-          <Route path='/Home' element={<Home />} />
+          <Route path='/Home' element={<Home/>} />
           <Route path='/Shop' element={<Shop setcartItem={setcartItem} />} />
           <Route path='/About' element={<About />} />
-          <Route path='/item' element={<Item />} />
-          <Route path='/cart' element={<Cart  />} />
+          <Route path='/item' element={<Item/>} />
+          <Route path='/cart' element={<Cart/>} />
+          <Route path='/login' element={<Login/>} />
         </Routes>
 
 
