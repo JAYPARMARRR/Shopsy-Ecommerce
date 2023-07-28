@@ -2,7 +2,7 @@ import React from "react";
 import cartImg from "../Componentes/img/Vector.jpg";
 import Logoimg from "./img/home-heding.png"
 import Heding2 from "./img/Heding2.png"
-
+import DansGif from "./img/bablu.gif"
 import "./MainHome.css";
 import { useNavigate } from "react-router-dom";
 const MainHome = () => {
@@ -12,6 +12,7 @@ const MainHome = () => {
 
 const navigate = useNavigate()  
   return (
+    <>
     <div id="home-box">
       <div>
         <img src={cartImg} alt="Not" id="#main-img" />;
@@ -26,6 +27,7 @@ const navigate = useNavigate()
 
 
       <h2 >
+        <img src={DansGif} alt="not "  id="bablu-gif-home"/>
         <img src={Heding2} alt="not"  id="heding-2" />
       </h2>
       <p id="pericarp-home1">
@@ -46,7 +48,10 @@ const navigate = useNavigate()
 
  </div>
       </div>
+
     </div>
+
+    </>
   );
 }; 
 

@@ -32,17 +32,17 @@ const Login = () => {
     <img src={LoginImg} alt="not" id='login-page-img' />
   </div>
     <div className="login-container">
-      <form className="login-form" onSubmit={Submit}>
-        <h1>Log in</h1>
+      <form className="login-form" >
+        <h1 id='logIn-lebal'>Log In</h1>
         <div className="form-group">
-          <label htmlFor="email">Email:</label>
+          <label htmlFor="email">Email😄</label>
           <input type="email" id="email" value={email} onChange={Email} required />
         </div>
         <div className="form-group">
-          <label htmlFor="password">Password:</label>
+          <label htmlFor="password">Password🙈</label>
           <input type="password" id="password" value={password} onChange={Password} required />
         </div>
-        <button type="submit" id='button-login'> <p>Log in</p></button>
+        <button type="submit" id='button-login'onClick={Submit}> <p>Submit</p></button>
       </form>
     </div>
     </div>

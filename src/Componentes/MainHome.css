@@ -5,9 +5,9 @@
     top: 125px;
 }
 
-#home-box{
+#home-box {
     display: flex;
-    margin-top: 45px;
+    margin-top: 39px;
 }
 
 
@@ -103,3 +103,9 @@
    }
    
    
+   #bablu-gif-home{
+    height: 173px;
+    position: absolute;
+    right: 62px;
+    bottom: 281px;
+   }
