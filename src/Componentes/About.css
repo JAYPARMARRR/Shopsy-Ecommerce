@@ -1,5 +1,6 @@
 #background-main-img {
   height: 676px;
+  color: #000;
   box-shadow: 2px 2px 7px 0px rgba(-63, -34, -64, 0.7);
   margin: auto;
   display: flex;
@@ -279,47 +280,19 @@
 }
 
 
-
-.circular-image-container {
-  position: relative;
-  width: 398px;
-  height: 403px;
-}
-
-.circular-image {
-  width: 100%;
-  height: 100%;
+.circle-image {
+  width: 384px;
+  height: 391px;
   border-radius: 50%;
-  background-image: url(/src/Componentes/img/IMG_20220901_173117_794.jpg);
-  background-size: contain;
-  background-position: center;
+  overflow: hidden;
   position: absolute;
-  bottom: 135%;
-  left: 119%;
+  top: 28%;
+  right: 38%;
 }
 
-.circular-image::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  border-radius: inherit;
-  border: 3px solid rgb(164 255 238);
-  animation: pulsate 2s ease-in-out infinite;
-}
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+.circle-image img {
+  width: 100%;
+  height: 100%; 
+  display: block; 
+  object-fit: cover;
 }
