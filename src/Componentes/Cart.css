@@ -1,4 +1,118 @@
 
+#cart-main{
+display: flex;
+
+}
+
+#left-cart {
+    height: 617px;
+    width: 68%;
+    /* background-color: #dbdbdb; */
+    border-radius: 10px;
+}
+.text-img{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+
+#Your-cart-heding {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    font-size: 39px;
+    color: #333;
+    margin-top: 15px;
+}
+
+
+
+#cart-nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#cart-nav ul {
+    list-style: none;
+    margin: 29px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 58%;
+}
+
+#cart-nav li {
+    font-size: 21px;
+    margin-right: 80px;
+}
+#product-left {
+    font-weight: 600;
+    position: absolute;
+    left: 10%;
+}
+#product-total{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#item-main-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3e3e3;
+    margin-top: 13px;
+}
+#titalOfCart{
+    font-size: 16px;
+}
+
+
+#cartImg-img{
+    height: 80px;
+} 
+/* ///////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+#right-cart {
+    border: 1px solid #333;
+    height: 36vh;
+    width: 38vh;
+    position: absolute;
+    right: 5%;
+    top: 36%;
+    color: #333;
+}
+
+.cart-right-heding {
+
+    display: flex;
+    justify-content: center;
+    padding-top: 13px;
+}
+
+.Shipping-cart-right {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px;
+    margin-top: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -36,12 +150,10 @@
    #cart-buttun::before {
     position: absolute;
     content: "";
-   /*   bottom: 80%; */
     transform: rotate(180deg);
     width: 100%;
     height: 10%;
     transition: 0.2s ease;
-   /*   bottom:; */
     z-index: -1;
     clip-path: polygon(0% 74%, 4% 75%, 8% 76%, 11% 77%, 15% 78%, 20% 78%, 25% 77%, 32% 77%, 37% 75%, 40% 74%, 43% 74%, 46% 73%, 52% 72%, 57% 72%, 65% 74%, 66% 75%, 71% 78%, 75% 82%, 81% 86%, 83% 88%, 88% 91%, 90% 94%, 94% 96%, 98% 98%, 100% 100%, 82% 100%, 0 100%);
     background: #8792eb;
@@ -57,4 +169,4 @@
     height: 80%;
    }
    
-   
+    

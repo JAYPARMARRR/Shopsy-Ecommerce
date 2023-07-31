@@ -13,10 +13,10 @@ const Navbar = ({cartItem}) => {
 
   return (
     <div id="main">
-      <nav>
+      <nav id="main-nav-navbar">
         <h1 className="Shopsy-logo"><img src={Logoimg} onClick={()=>{ navigate("/");;}} className="logo_img"/></h1>
 
-        <ul>
+        <ul id="nav-ul">
           <li>
             <Link to="/home">Home</Link>
           </li>
