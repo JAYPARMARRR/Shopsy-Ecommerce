@@ -1,10 +1,11 @@
 #background-main-img {
   height: 676px;
+  color: #000;
   box-shadow: 2px 2px 7px 0px rgba(-63, -34, -64, 0.7);
   margin: auto;
   display: flex;
- justify-content: center;
- align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #lift-side-box-about {
@@ -13,8 +14,8 @@
   left: 15%;
 }
 
-#tow-main{
-    display: flex;
+#tow-main {
+  display: flex;
 }
 
 #about-heding-jayu {
@@ -43,9 +44,10 @@
   top: 111%;
   font-size: 20px;
 }
+
 #peracef-about-span {
   font-weight: bold;
-  color:  rgb(164 255 238);
+  color: rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
@@ -55,9 +57,10 @@
   position: absolute;
   bottom: -88%;
 }
+
 #about-email-span {
   font-weight: bold;
-  color:  rgb(164 255 238);
+  color: rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
@@ -67,24 +70,26 @@
   position: absolute;
   bottom: -103%;
 }
+
 #about-phone-span {
   font-weight: bold;
-  color:  rgb(164 255 238);
+  color: rgb(164 255 238);
   font-family: "YourSelectedFont", sans-serif;
 }
 
 #button-about {
-    border: none;
-    width: 149px;
-    height: 50px;
-    color: #fff;
-    z-index: 1;
-    display: flex;
-    background: #000;
-    position: absolute;
-    top: 232%;
-    right: 53%;
+  border: none;
+  width: 149px;
+  height: 50px;
+  color: #fff;
+  z-index: 1;
+  display: flex;
+  background: #000;
+  position: absolute;
+  top: 232%;
+  right: 53%;
 }
+
 #button-about p {
   margin: 0 auto;
   align-self: center;
@@ -101,35 +106,33 @@
   z-index: -1;
   height: 10%;
   bottom: 0;
-  clip-path: polygon(
-    0% 74%,
-    4% 75%,
-    8% 76%,
-    11% 77%,
-    15% 78%,
-    20% 78%,
-    25% 77%,
-    32% 77%,
-    37% 75%,
-    40% 74%,
-    43% 74%,
-    46% 73%,
-    52% 72%,
-    57% 72%,
-    65% 74%,
-    66% 75%,
-    71% 78%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
+  clip-path: polygon(0% 74%,
+      4% 75%,
+      8% 76%,
+      11% 77%,
+      15% 78%,
+      20% 78%,
+      25% 77%,
+      32% 77%,
+      37% 75%,
+      40% 74%,
+      43% 74%,
+      46% 73%,
+      52% 72%,
+      57% 72%,
+      65% 74%,
+      66% 75%,
+      71% 78%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%);
   background: #8792eb;
   transition: 0.2s ease;
 }
@@ -144,182 +147,200 @@
   transition: 0.2s ease;
   /*   bottom:; */
   z-index: -1;
-  clip-path: polygon(
-    0% 74%,
-    4% 75%,
-    8% 76%,
-    11% 77%,
-    15% 78%,
-    20% 78%,
-    25% 77%,
-    32% 77%,
-    37% 75%,
-    40% 74%,
-    43% 74%,
-    46% 73%,
-    52% 72%,
-    57% 72%,
-    65% 74%,
-    66% 75%,
-    71% 78%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
+  clip-path: polygon(0% 74%,
+      4% 75%,
+      8% 76%,
+      11% 77%,
+      15% 78%,
+      20% 78%,
+      25% 77%,
+      32% 77%,
+      37% 75%,
+      40% 74%,
+      43% 74%,
+      46% 73%,
+      52% 72%,
+      57% 72%,
+      65% 74%,
+      66% 75%,
+      71% 78%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%);
   background: #8792eb;
 }
 
 #button-about:hover::after {
-  clip-path: polygon(
-    0 30%,
-    9% 34%,
-    7% 39%,
-    11% 43%,
-    13% 33%,
-    17% 30%,
-    24% 34%,
-    25% 35%,
-    30% 31%,
-    30% 38%,
-    39% 33%,
-    35% 43%,
-    43% 45%,
-    55% 46%,
-    65% 74%,
-    67% 66%,
-    81% 57%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
+  clip-path: polygon(0 30%,
+      9% 34%,
+      7% 39%,
+      11% 43%,
+      13% 33%,
+      17% 30%,
+      24% 34%,
+      25% 35%,
+      30% 31%,
+      30% 38%,
+      39% 33%,
+      35% 43%,
+      43% 45%,
+      55% 46%,
+      65% 74%,
+      67% 66%,
+      81% 57%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%);
   height: 80%;
 }
 
 #button-about:hover::before {
-  clip-path: polygon(
-    0 30%,
-    9% 34%,
-    7% 39%,
-    11% 43%,
-    13% 33%,
-    17% 30%,
-    24% 34%,
-    25% 35%,
-    30% 31%,
-    30% 38%,
-    39% 33%,
-    35% 43%,
-    43% 45%,
-    55% 46%,
-    65% 74%,
-    67% 66%,
-    81% 57%,
-    75% 82%,
-    81% 86%,
-    83% 88%,
-    88% 91%,
-    90% 94%,
-    94% 96%,
-    98% 98%,
-    100% 100%,
-    82% 100%,
-    0 100%
-  );
+  clip-path: polygon(0 30%,
+      9% 34%,
+      7% 39%,
+      11% 43%,
+      13% 33%,
+      17% 30%,
+      24% 34%,
+      25% 35%,
+      30% 31%,
+      30% 38%,
+      39% 33%,
+      35% 43%,
+      43% 45%,
+      55% 46%,
+      65% 74%,
+      67% 66%,
+      81% 57%,
+      75% 82%,
+      81% 86%,
+      83% 88%,
+      88% 91%,
+      90% 94%,
+      94% 96%,
+      98% 98%,
+      100% 100%,
+      82% 100%,
+      0 100%);
   height: 80%;
 }
+
 /* //////////////////////////////////////////////////////////////////////////////////// */
 
-#right-side-main{
- 
-    position: absolute;
-    top: 21%;
-    right: 19%;
+#right-side-main {
+  position: absolute;
+  top: 34%;
+  right: 2%;
+  height: 228px;
+  width: 420px;
 }
 
 #right-heding {
-    color: white;
-    font-size: 29px;
-    font-family: "YourSelectedFont", sans-serif;
-    margin-right: -61px;
+  font-size: 40px;
+  font-family: "YourSelectedFont", sans-serif;
+  margin-right: 24px
+px
+;
 }
 
-#icons-about{
-    display: flex;
+#icons-about {
+  display: flex;
+  height: 117px;
+  width: 101%;
+  margin: -8px 19px;
+  gap: 5px;
 }
-
 .icons-about-peg {
-    height: 48px;
-    margin-top: 28px;
+  height: 48px;
+  margin-top: 28px;
 }
+
+
 #vercel-m {
-    margin-left: -17px;
+  position: absolute;
+  right: 43%;
 }
 
 
 
-#Astronauts-walk {
-    height: 253px;
-    position: absolute;
-    top: 186%;
-    right: -39%;
+
+.circle-image {
+  width: 384px;
+  height: 391px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  top: 26%;
+  right: 38%;
 }
 
-
-
-.circular-image-container {
-  position: relative;
-  width: 398px;
-  height: 403px;
-}
-
-.circular-image {
+.circle-image img {
   width: 100%;
   height: 100%;
-  border-radius: 50%;
-  background-image: url(/src/Componentes/img/IMG_20220901_173117_794.jpg);
-  background-size: contain;
-  background-position: center;
-  position: absolute;
-  bottom: 135%;
-  left: 119%;
+  display: block;
+  object-fit: cover;
 }
 
-.circular-image::before {
-  content: '';
+
+
+
+#email-about-one {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  gap: 15px;
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 80%;
-  height: 80%;
-  border-radius: inherit;
-  border: 3px solid rgb(164 255 238);
-  animation: pulsate 2s ease-in-out infinite;
+  top: 143%;
 }
-@keyframes pulsate {
-  0% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  50% {
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
+
+
+#email-about-one input[type="text"] {
+  flex: 1;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 18px;
+}
+#email-about-one input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+
+
+#right-side-peracef-about {
+  font-family: "YourSelectedFont", sans-serif;
+  font-size: 17px;
+  position: absolute;
+  bottom: -44%;
+  right: 45%;
+}
+#email-about-one button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+}
+#email-about-one button:hover {
+  background-color: #0056b3;
 }
