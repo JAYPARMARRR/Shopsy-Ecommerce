@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { useState } from "react";
 import "./Cart.css";
 // import cartImg from "../Componentes/img/5465858.png";
 
@@ -7,8 +8,29 @@ import "./Cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cartItem }) => {
 
+const [count , setcount] =useState(1)
 
-         
+
+const Decrease =()=>{
+  setcount (count -1)
+}
+const Increase =()=>{
+  setcount (count + 1)
+}
+
+
+  const filterData = () => {
+    let arr = []
+    let arrId =[]
+    cartItem.map((e) => {
+      if (!arrId.includes(e.id)) {
+        arr.push(e)
+        arrId.push(e.id)
+      }
+    })
+    return arr
+  }
+
 
   return (
     <div id="cart-main">
@@ -31,22 +53,25 @@ const Cart = ({ cartItem }) => {
 
         </nav>
 
-        {cartItem.map((item, index) => (
-        <div id="item-main-div" key={index}>
-          <div className="text-img">
-            <img src={item.thumbnail} id="cartImg-img" />
-            <h4 id="titleOfCart">{item.title}</h4>
-          </div>
-          <div>${item.price}</div>
-          <div>
-            <span >⏪</span>2<span>⏩</span>
-          </div>
-          <div>$840</div>
-          <div className="remove-an-item">
-            <span>✖</span>
-          </div>
-        </div>
-      ))}
+        {filterData().map((item, index) => {
+
+          return (
+            <div id="item-main-div" key={index}>
+              <div className="text-img">
+                <img src={item.thumbnail} id="cartImg-img" />
+                <h4 id="titleOfCart">{item.title}</h4>
+              </div>
+              <div>${item.price * count}</div>
+              <div>
+                <span  onClick={Decrease} >⏪</span>{count}<span onClick={Increase}>⏩</span>
+              </div>
+              <div>${item.price * count}</div>
+              <div className="remove-an-item">
+                <span>✖</span>
+              </div>
+            </div>
+          )
+        })}
 
       </div>
 

@@ -10,6 +10,8 @@ import MainHome from './Componentes/MainHome';
 import Login from './Componentes/login';
 
 
+// https://moltani.app/#/win
+
 const App = () => {
   const[ cartItem , setcartItem] = useState([])
   
@@ -22,7 +24,7 @@ const App = () => {
           
           <Route path='/' element={<MainHome/>} />
           <Route path='/Home' element={<Home/>} />
-          <Route path='/Shop' element={<Shop setcartItem={setcartItem} />} />
+          <Route path='/Shop' element={<Shop cartItem={cartItem} setcartItem={setcartItem} />} />
           <Route path='/About' element={<About />} />
           <Route path='/item' element={<Item/>} />
           <Route path='/cart' element={<Cart cartItem={cartItem} />} />

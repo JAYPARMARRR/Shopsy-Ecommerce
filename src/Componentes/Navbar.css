@@ -22,8 +22,8 @@
 }
 .cart {
   position: absolute;
-  top: 3px;
-  right: -1px;
+  top: 4px;
+  right: 9px;
   color: black;
   background-color: #b0b9ff;
   padding: 1px 4px 1px 4px;
@@ -125,10 +125,9 @@
  
  
  #cart {
-  margin: 10px -26px;
+  margin: 10px -39px;
   height: 28px;
 }
-
 .save-but{
   display: flex;
   justify-content: center;

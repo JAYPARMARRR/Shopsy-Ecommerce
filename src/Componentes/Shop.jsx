@@ -10,7 +10,7 @@ import { useNavigate } from "react-router-dom";
 
 
 // eslint-disable-next-line react/prop-types
-const Shop = ({setcartItem}) => {
+const Shop = ({cartItem, setcartItem}) => {
   const [products, setProducts] = useState([]);
 
   const navigate= useNavigate()
@@ -36,12 +36,15 @@ const Shop = ({setcartItem}) => {
     }
   };
 
-  const AddCart =  (a)=>{
-    setcartItem((Itemss) => [...Itemss, a]);
-     
-  }
+  const AddCart = (a) => {
+    console.log(cartItem);
+      if(!cartItem.map((e) => e.id).includes(a.id)){
+        setcartItem((items) => [...items, a]);
+      }
 
-console.log();
+
+  };
+
   
 
   return (
