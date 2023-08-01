@@ -5,6 +5,7 @@ import LinkdinImg from "./img/linkedin.png";
 import GitImg from "./img/git.png";
 import VercelImg from "./img/vercel.png";
 import JayulImg from "./img/Jayu.jpg";
+import { useNavigate } from "react-router-dom";
 // import GolGif from "./img/golgifabout.gif"
 
 const About = () => {
@@ -24,6 +25,9 @@ const About = () => {
   const VercelClick = () => {
     window.open("https://vercel.com/dashboard", "_blank");
   };
+
+ const navugate= useNavigate()
+
 
   return (
     <div>
@@ -47,7 +51,7 @@ const About = () => {
             <span id="about-phone-span">Phone📞</span>: +95 10923353
           </h6>
 
-          <button id="button-about">
+          <button id="button-about" onClick={()=>{navugate("/")}} >
             <p>Get Started</p>
           </button>
         </div>

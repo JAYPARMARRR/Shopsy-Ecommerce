@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import axios from "axios";
 import "./Shop.css";
 import { useState } from "react";
@@ -9,6 +9,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
+// eslint-disable-next-line react/prop-types
 const Shop = ({setcartItem}) => {
   const [products, setProducts] = useState([]);
 
@@ -37,9 +38,10 @@ const Shop = ({setcartItem}) => {
 
   const AddCart =  (a)=>{
     setcartItem((Itemss) => [...Itemss, a]);
+     
   }
 
-
+console.log();
   
 
   return (

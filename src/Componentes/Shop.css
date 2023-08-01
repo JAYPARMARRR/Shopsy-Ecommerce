@@ -1,5 +1,5 @@
 .mine-box {
-  border: 1px solid #8792eb;
+  /* border: 1px solid #8792eb; */
   width: 20%;
   margin: 35px 50px;
 }
@@ -22,10 +22,10 @@
 }
 
 .title {
-  color: #8792eb;
+  color: #292222;
 }
 .price {
-  color: #8792eb;
+  color: #292222;
 }
 
 .card-heding {

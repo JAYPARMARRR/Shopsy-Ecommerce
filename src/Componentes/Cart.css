@@ -10,6 +10,11 @@ display: flex;
     /* background-color: #dbdbdb; */
     border-radius: 10px;
  
+}#left-cart {
+    height: 88vh;
+    width: 68%;
+    background-color: #dbdbdb;
+    border-radius: 10px;
 }
 .text-img{
     display: flex;
@@ -89,7 +94,7 @@ display: flex;
 
 #right-cart {
     border: 1px solid #333;
-    height: 36vh;
+    height: 31vh;
     width: 38vh;
     position: absolute;
     right: 5%;
@@ -132,14 +137,14 @@ display: flex;
 
 #cart-buy-button {
     border: none;
-    width: 245px;
+    width: 100%;
     height: 46px;
     color: #fff;
     z-index: 1;
     display: flex;
     background: #000;
     position: relative;
-    margin-top: 20px;
+    margin-top: 25px;
 }
    #cart-buy-button p {
     margin: 0 auto;
