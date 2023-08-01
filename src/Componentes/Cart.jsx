@@ -9,7 +9,7 @@ const Cart = () => {
 
 
 
-
+  
 
       <div id="left-cart" >
         <h1 id="Your-cart-heding" >Your cart</h1>
@@ -58,7 +58,7 @@ const Cart = () => {
           <h2>Total </h2>
           <h3>$480</h3>
         </div>
-        <button>Proceed to Buy</button>
+        <button id="cart-buy-button"><p>Proceed to Buy</p></button>
       </div>
 
 
