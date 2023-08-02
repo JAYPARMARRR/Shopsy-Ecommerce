@@ -8,30 +8,60 @@ import "./Cart.css";
 // eslint-disable-next-line react/prop-types
 const Cart = ({ cartItem }) => {
 
-const [count , setcount] =useState(1)
+  const [itemQuantities, setItemQuantities] = useState(() => {
+    const quantities = {};
+    cartItem.forEach((item) => {
+      quantities[item.id] = 1;
+    });
+    return quantities;
+  });
 
 
-const Decrease =()=>{
-  setcount (count -1)
-}
-const Increase =()=>{
-  setcount (count + 1)
-}
+
+
+  const Decrease = (itemId) => {
+    setItemQuantities((prevQuantities) => {
+      const updatedQuantities = { ...prevQuantities };
+      updatedQuantities[itemId] = Math.max(updatedQuantities[itemId] - 1, 1);
+      return updatedQuantities;
+    });
+  };
+
+  
+
+
+  const Increase = (itemId) => {
+    setItemQuantities((prevQuantities) => {
+      const updatedQuantities = { ...prevQuantities };
+      updatedQuantities[itemId] = updatedQuantities[itemId] + 1;
+      return updatedQuantities;
+    });
+  };
+
+
 
 
   const filterData = () => {
-    let arr = []
-    let arrId =[]
-    cartItem.map((e) => {
+    let arr = [];
+    let arrId = [];
+    cartItem.forEach((e) => {
       if (!arrId.includes(e.id)) {
-        arr.push(e)
-        arrId.push(e.id)
+        arr.push(e);
+        arrId.push(e.id);
       }
-    })
-    return arr
-  }
+    });
+    return arr;
+  };
 
 
+
+  
+  const totalCartPrice = filterData().reduce((total, item) => {
+    const itemPrice = item.price * itemQuantities[item.id];
+    return total + itemPrice;
+  }, 0);
+
+  
   return (
     <div id="cart-main">
 
@@ -54,25 +84,25 @@ const Increase =()=>{
         </nav>
 
         {filterData().map((item, index) => {
-
           return (
             <div id="item-main-div" key={index}>
               <div className="text-img">
                 <img src={item.thumbnail} id="cartImg-img" />
                 <h4 id="titleOfCart">{item.title}</h4>
               </div>
-              <div>${item.price * count}</div>
+              <div>${item.price}</div>
               <div>
-                <span  onClick={Decrease} >⏪</span>{count}<span onClick={Increase}>⏩</span>
+                <span onClick={() => Decrease(item.id)}>⏪</span>
+                {itemQuantities[item.id]}
+                <span onClick={() => Increase(item.id)}>⏩</span>
               </div>
-              <div>${item.price * count}</div>
+              <div>${item.price * itemQuantities[item.id]}</div>
               <div className="remove-an-item">
                 <span>✖</span>
               </div>
             </div>
-          )
+          );
         })}
-
       </div>
 
 
@@ -83,22 +113,25 @@ const Increase =()=>{
 
 
 
-      <div id="right-cart" >
-        <h2 className="cart-right-heding">Order Summary</h2>
-        <div className="Shipping-cart-right">
-          <h5>Shipping Charg</h5>
-          <h5>Free</h5>
-
-        </div>
-        <div className="Total-main-div">
-          <h2>Total </h2>
-          <h3>$480</h3>
-        </div>
-        <button id="cart-buy-button"><p>Proceed to Buy</p></button>
+    
+    <div id="right-cart" >
+      <h2 className="cart-right-heding">Order Summary</h2>
+      <div className="Shipping-cart-right">
+        <h5>Shipping Charge</h5>
+        <h5>Free</h5>
       </div>
+      <div className="Total-main-div">
+        <h2>Total</h2>
+        <h3>${totalCartPrice}</h3>
+      </div>
+      <button id="cart-buy-button">
+        <p>Proceed to Buy</p>
+      </button>
+    </div>
 
 
 
+ 
 
 
 

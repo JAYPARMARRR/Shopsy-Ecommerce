@@ -38,6 +38,7 @@ const Shop = ({cartItem, setcartItem}) => {
 
   const AddCart = (a) => {
     console.log(cartItem);
+      // eslint-disable-next-line react/prop-types
       if(!cartItem.map((e) => e.id).includes(a.id)){
         setcartItem((items) => [...items, a]);
       }
