@@ -4,10 +4,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Shop from './Componentes/Shop';
 import About from './Componentes/About';
 import Home from './Componentes/Home';
-import Item from './Componentes/item';
+import Item from './Componentes/Item';
 import Cart from './Componentes/Cart';
 import MainHome from './Componentes/MainHome';
-import Login from './Componentes/login';
+import Login from './Componentes/Login';
 
 
 // https://moltani.app/#/win
@@ -16,7 +16,7 @@ const App = () => {
   const[ cartItem , setcartItem] = useState([])
   
   console.log(cartItem,">>>>>>");
-  return (
+  return (  
     <div>
       <BrowserRouter>
         <Navbar cartItem={cartItem} />
