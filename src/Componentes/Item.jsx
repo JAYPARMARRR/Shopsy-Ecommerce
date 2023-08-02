@@ -35,6 +35,7 @@ const Item = () => {
               
               {Array.isArray(itemm?.images) ? (
                 itemm?.images?.map((url) => {
+                  // eslint-disable-next-line react/jsx-key
                   return <img src={url} alt="Not" className="img2" />;
                 })
               ) : (
