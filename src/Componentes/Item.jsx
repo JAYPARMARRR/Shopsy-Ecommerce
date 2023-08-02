@@ -22,6 +22,7 @@ const Item = () => {
 
   useEffect(() => {
     itemFetch();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   console.log("itemm", itemm);
